@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<sdf version="1.6">
+<model name="check_size">
+<pose>0 0 0 0 0 0</pose>
+<static>true</static>
+    <link name="link">
+      <inertial>
+        <mass>0.0562</mass>
+        <inertia>
+          <ixx>0.293</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.005</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.297</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+	        <mesh>
+		  <uri>model://check_size/Scaniverse_2023_04_04_203044.obj</uri>	
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+		  <uri>model://check_size/Scaniverse_2023_04_04_203044.obj</uri>
+          </mesh>
+  	</geometry>
+	<!-- <material> -->
+	<!-- <script>
+		<uri>model://tsudanuma2-3/materials/test_texture.material</uri>
+		<name>TestTexture</name>
+	</script> -->
+	<!-- </material> -->
+      </visual>
+    </link>
+  </model>
+</sdf>
